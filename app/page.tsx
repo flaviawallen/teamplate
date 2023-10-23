@@ -33,6 +33,7 @@ export default function Plugin() {
   // This function calls our API and handles the streaming response.
   // This ends up building the text up and using React state to update the UI.
   const onStreamToIFrame = async () => {
+    console.log("hello");
     setCompletion("");
     const layers = await getTextForSelection();
 
@@ -40,7 +41,7 @@ export default function Plugin() {
       figmaAPI.run(async (figma) => {
         figma.notify(
           "Please select a layer with text in it to generate a poem.",
-          { error: true },
+          { error: true }
         );
       });
       return;
@@ -70,7 +71,7 @@ export default function Plugin() {
       figmaAPI.run(async (figma) => {
         figma.notify(
           "Please select a layer with text in it to generate a poem.",
-          { error: true },
+          { error: true }
         );
       });
       return;
@@ -122,7 +123,7 @@ export default function Plugin() {
 
           return node.id;
         },
-        { nodeID, text, textPosition },
+        { nodeID, text, textPosition }
       );
     };
 

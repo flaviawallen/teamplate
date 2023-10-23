@@ -3,6 +3,8 @@ import {
   Configuration,
   OpenAIApi,
 } from "openai-edge";
+
+
 import { OpenAIStream, StreamingTextResponse } from "ai";
 import { CompletionRequestBody } from "@/lib/types";
 
@@ -58,6 +60,7 @@ export async function POST(req: Request) {
   const stream = OpenAIStream(response);
   // Respond with the stream
   const result = new StreamingTextResponse(stream);
-
-  return result;
+  console.log(result)
+  return result
+  ;
 }

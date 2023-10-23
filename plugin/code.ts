@@ -1,4 +1,4 @@
-declare const SITE_URL: string;
+declare const SITE_URL: "teamplate-n74n23ffr-flaviawallenhorst-gmailcom.vercel.app";
 
 figma.showUI(`<script>window.location.href = '${SITE_URL}'</script>`, {
   width: 700,

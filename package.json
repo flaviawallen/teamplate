@@ -33,9 +33,9 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.2"
   },
   "config": {
-    "siteURL": "https://test-ai-plugin-template.vercel.app/"
+    "siteURL": "https://teamplate-7fc8-ao28sqpud-flaviawallenhorst-gmailcom.vercel.app/"
   }
 }
